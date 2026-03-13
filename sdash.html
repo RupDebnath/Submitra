@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Submitra Student Dashboard</title>
+    <link rel="stylesheet" href="sdash.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Submitra</h2>
+        <ul>
+            <li>Dashboard</li>
+            <li>Upload Assignment</li>
+            <li>My Submissions</li>
+            <li>Notifications</li>
+            <li>Profile</li>
+            <li>Logout</li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main">
+
+        <!-- Top Bar -->
+        <div class="topbar">
+            <h2>Student Dashboard</h2>
+            <p>Welcome, Sourav</p>
+        </div>
+
+        <!-- Statistics -->
+        <div class="cards">
+
+            <div class="card">
+                <h3>Total Assignments</h3>
+                <p>12</p>
+            </div>
+
+            <div class="card">
+                <h3>Submitted</h3>
+                <p>8</p>
+            </div>
+
+            <div class="card">
+                <h3>Pending</h3>
+                <p>4</p>
+            </div>
+
+        </div>
+
+        <!-- Upload Assignment -->
+        <div class="upload">
+            <h3>Upload Assignment</h3>
+
+            <form>
+                <label>Subject</label><br>
+                <input type="text" placeholder="Enter Subject"><br>
+
+                <label>Assignment Title</label><br>
+                <input type="text" placeholder="Enter Title"><br>
+
+                <label>Upload File</label><br>
+                <input type="file"><br>
+
+                <button type="submit">Submit Assignment</button>
+            </form>
+        </div>
+
+        <!-- Recent Submissions -->
+        <div class="table-section">
+            <h3>Recent Submissions</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Subject</th>
+                        <th>Title</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Math</td>
+                        <td>Regression Assignment</td>
+                        <td>Reviewed</td>
+                    </tr>
+
+                    <tr>
+                        <td>Electronics</td>
+                        <td>Op-Amp Experiment</td>
+                        <td>Pending</td>
+                    </tr>
+
+                    <tr>
+                        <td>Programming</td>
+                        <td>Linked List Program</td>
+                        <td>Submitted</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

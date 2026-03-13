@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Submitra Dashboard</title>
+<link rel="stylesheet" href="dconnect.css">
+</head>
+
+<body onload="showTime()">
+
+<header class="topbar">
+
+<h2 class="logo">Submitra Panel</h2>
+
+<div class="time">
+<span id="datetime"></span>
+</div>
+
+</header>
+
+
+<section class="dashboard-container">
+
+<h1>Welcome to Submitra Panel</h1>
+<p class="subtitle">
+Choose your dashboard to continue
+</p>
+
+<div class="dashboard-cards">
+
+<div class="dash-card student">
+    <div class="card">
+
+
+<i class="fa-solid fa-user-graduate"></i>
+
+</div>
+
+<h2>Student Dashboard</h2>
+
+<p>
+Upload assignments, check submission status,
+view deadlines and see teacher feedback.
+</p>
+
+<a href="sdash.html" class="button-link">
+Enter Student Panel
+</a>
+
+</div>
+
+
+<div class="dash-card teacher">
+    <i class="fa-solid fa-chalkboard-user"></i>
+
+
+<h2>Teacher Dashboard</h2>
+
+<p>
+Review submitted assignments, give marks,<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+provide feedback and manage student submissions.
+</p>
+
+<a href="Submitra/Dashboard.html" class="button-link">
+Enter Teacher Panel
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<footer>
+
+<p></p>© 2026 Submitra Portal | All Rights Reserved
+
+</footer>
+
+
+<script>
+
+function showTime(){
+
+let now = new Date();
+
+let d = now.getDate();
+let m = now.getMonth()+1;
+let y = now.getFullYear();
+
+let h = now.getHours();
+let min = now.getMinutes();
+let s = now.getSeconds();
+
+document.getElementById("datetime").innerHTML =
+d+"-"+m+"-"+y+" | "+h+":"+min+":"+s;
+
+}
+
+setInterval(showTime,1000);
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,122 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#c079c8,#7da2c4);
+min-height:100vh;
+display:flex;
+flex-direction:column;
+}
+nav{
+    color: rgb(199, 212, 239);
+    height: 100px;
+    width: 1527px;
+    background:linear-gradient(135deg,#2a6aca,#b82bdf);
+    text-align: center;
+}
+nav h1{
+    padding-top: 20px;
+}
+/* Header */
+
+header{
+text-align:center;
+padding:30px;
+color:white;
+}
+
+header h1{
+font-size:35px;
+margin-bottom:35px;
+color: rgb(64, 71, 75);
+}
+header p{
+font-size:21px;
+margin-bottom:5px;
+color: rgb(65, 70, 72);
+font-weight: 5px;
+}
+
+/* Login Section */
+
+.login-section{
+flex:1;
+display:flex;
+justify-content:center;
+align-items:center;
+gap:40px;
+padding:40px;
+flex-wrap:wrap;
+}
+
+/* Cards */
+
+.card{
+padding:30px;
+width:280px;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(212, 204, 204, 0.2);
+text-align:center;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 15px 35px rgba(0,0,0,0.3);
+}
+
+.card h2{
+margin-bottom:10px;
+color:#3b264f;
+text-align: center;
+}
+
+.card p{
+font-size:14px;
+margin-bottom:20px;
+color:#492c48;
+}
+
+/* Button */
+
+button{
+background:#00b09b;
+color:white;
+border:none;
+padding:10px 20px;
+border-radius:25px;
+cursor:pointer;
+font-size:14px;
+transition:0.3s;
+}
+
+button:hover{
+background:#028a76;
+transform:scale(1.05);
+}
+
+/* Footer */
+
+footer{
+text-align:center;
+padding:15px;
+background:linear-gradient(135deg,#2a6aca,#b82bdf);
+color:rgb(53, 45, 45);
+font-size:14px;
+}
+h2{
+    color: rgb(245, 246, 248);
+    font-weight: 200;
+    text-align: right;
+    font-size: 20px;
+
+}
+#datetime{
+    color: rgb(244, 221, 236);
+    text-align: right;
+    font-size: 17px;
+}

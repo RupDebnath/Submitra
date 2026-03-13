@@ -1,0 +1,62 @@
+body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background:linear-gradient(135deg,#72a3ed,#8c3aa2);
+}
+
+.review-section{
+text-align:center;
+padding:60px;
+}
+
+.review-section h1{
+font-size:36px;
+margin-bottom:10px;
+}
+
+.subtitle{
+color:#ece1e1;
+margin-bottom:30px;
+}
+
+.review-container{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:30px;
+}
+
+.review-card{
+background:white;
+width:250px;
+padding:25px;
+border-radius:12px;
+box-shadow:0 8px 20px rgba(0,0,0,0.15);
+transition:0.3s;
+}
+
+.review-card:hover{
+transform:translateY(-8px);
+}
+
+.profile{
+font-size:40px;
+color:#3498db;
+margin-bottom:10px;
+}
+
+.role{
+color:#888;
+font-size:14px;
+}
+
+.stars{
+color:#f1c40f;
+margin:10px 0;
+}
+
+.review-card p{
+font-size:14px;
+color:#555;
+line-height:1.5;
+}

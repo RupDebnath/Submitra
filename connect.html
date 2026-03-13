@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Submitra Log-in Portal</title>
+<link rel="stylesheet" href="connect.css">
+</head>
+
+<body>
+
+    <nav>
+        <h1> Welcome TO Submitra Log-in Service </h1>
+    </nav>
+<header>
+<p id="datetime"></p>
+
+<script>
+function showDateTime() {
+    let now = new Date();
+
+    let day = now.getDate();
+    let month = now.getMonth() + 1;
+    let year = now.getFullYear();
+
+    let hours = now.getHours();
+    let minutes = now.getMinutes();
+    let seconds = now.getSeconds();
+
+    let currentDateTime = day + "-" + month + "-" + year + " " +
+                          hours + ":" + minutes + ":" + seconds;
+
+    document.getElementById("datetime").innerHTML = currentDateTime;
+}
+
+setInterval(showDateTime, 1000);
+</script>
+    <p>Submitra is a web-based academic platform for managing assignment submissions. It helps students and teachers handle assignments in an organized digital system.Students can upload their assignments online through the website.They can also check the status of their submissions easily.
+The platform allows teachers to review assignments and provide feedback.It reduces problems like missed deadlines, lost files, and poor communication.
+Overall, Submitra makes assignment submission simpler and more efficient for students and teachers.
+        </p>
+
+</header>
+
+<section class="login-section">
+
+    <div class="card">
+        <h2>Student Login</h2>
+        <p>Students can login using their Email and Password.</p>
+        <button type="button" onclick="window.location.href='login.html'">Login as Student</button>
+    </div>
+
+    <div class="card">
+        <h2>Teacher Login</h2>
+        <p>Teachers can login using their Email and Password.</p>
+       <button type="button" onclick="window.location.href='Submitra/tlogin.html'">Login as Teacher</button>
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 Submitra Portal | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
